@@ -1,0 +1,108 @@
+@media only screen and (min-width: 810px) {
+  h2 {
+    width: 50%;
+  }
+  main {
+    width: 80%;
+    margin: 20px auto;
+  }
+  form {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  main {
+    margin: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  section {
+    margin-top: 17%;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  form {
+    width: 40%;
+  }
+  img {
+    width: 100%;
+  }
+  #hiddenMobile {
+    display: block;
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #61B3FF;
+  }
+  hr {
+    background-color: #f672b3;
+    border: none;
+    height: 5px;
+    margin: 15px auto;
+    display: block;
+    width: 50%;
+    border-radius: 10px;
+  }
+  .modal-content {
+    width: 50%;
+  }
+  .modalImg {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  section {
+    margin: 10% auto;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  form {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  section {
+    margin: 10% auto;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  form {
+    width: 30%;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

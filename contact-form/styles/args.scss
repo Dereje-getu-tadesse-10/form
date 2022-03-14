@@ -1,0 +1,24 @@
+
+$colorErreur : rgba(255, 0, 0, 0.47);
+
+@mixin button {
+    font-family: 'Poppins';
+    background-color: #CADDFF;
+    width: 230px;
+    height: 40px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    color: white;
+    border:none;
+    cursor: pointer;
+}
+
+$hoverBtn :#61B3FF;
+
+
+@mixin input {
+    border-radius: 5px;
+    font-size: 1rem;
+    padding-left: 5px;
+    border: 2px solid #CADDFF;
+}
