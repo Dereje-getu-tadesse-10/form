@@ -1,59 +1,90 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./styles/responsive.css">
-    <i class="fa-solid fa-slash"></i>
-    <title>Document</title>
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <link rel="shortcut icon" href="./assets/8401.jpg" type="image/x-icon" />
+    <title>Formulaire de contact</title>
+  </head>
+  <body>
     <div id="myModal" class="modal">
-        <div class="modal-content">
-          <img class="close" src="./assets/close.svg"/>
-          <img class="modalImg" src="./assets/59877.jpg" alt="">
-          <p>Merci, votre message a bien été envoyé.</p>
-          <p>Vous recevrez une réponse dans les prochaines heures.</p>
-        </div>
+      <div class="modal-content">
+        <img class="close" src="./assets/close.svg" />
+        <img class="modalImg" src="./assets/59877.jpg" alt="" />
+        <p>Merci, votre message a bien été envoyé.</p>
+        <p>Vous recevrez une réponse dans les prochaines heures.</p>
+      </div>
     </div>
 
     <header>
-        <h1>./formulaire-de-contact</h1>
+      <h1>./formulaire-de-contact</h1>
     </header>
 
     <main>
-        <section>
-            <img src="./assets/8401.jpg" alt="">
-            <h2>Vous n'avez pas trouvé la réponse à votre question ?</h2>
-        </section>
-        <form method="POST">
-            <p id="hiddenMobile">Contactez moi</p>
-            <hr>
-            <label class="baseLabel" for="Nom">Nom</label>
-            <input name="nom" id="nom" type="text" placeholder="votre nom" pattern="[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$" required>
-            <span class="erreurNom"></span>
+      <section>
+        <img src="./assets/8401.jpg" alt="" />
+        <h2>Vous n'avez pas trouvé la réponse à votre question ?</h2>
+      </section>
+      <form method="POST">
+        <p id="hiddenMobile">Contactez moi</p>
+        <hr />
+        <label class="baseLabel" for="Nom">Nom</label>
+        <input
+          name="nom"
+          id="nom"
+          type="text"
+          placeholder="votre nom"
+          pattern="[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$"
+          required
+        />
+        <span class="erreurNom"></span>
 
-            <label class="baseLabel" for="Email">Email</label>
-            <input name="email" id="email" type="email" placeholder="votre email" required>
-            <span class="erreurEmail"></span>
+        <label class="baseLabel" for="Email">Email</label>
+        <input
+          name="email"
+          id="email"
+          type="email"
+          placeholder="votre email"
+          required
+        />
+        <span class="erreurEmail"></span>
 
-            <label class="baseLabel" for="Sujet">Sujet</label>
-            <input name="sujet" id="sujet" type="text" placeholder="votre sujet" pattern="[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-\s]]+$" required>
-            <span class="erreurSujet"></span>
+        <label class="baseLabel" for="Sujet">Sujet</label>
+        <input
+          name="sujet"
+          id="sujet"
+          type="text"
+          placeholder="votre sujet"
+          pattern="[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-\s]]+$"
+          required
+        />
+        <span class="erreurSujet"></span>
 
-            <label class="baseLabel" for="Message">Comment puis-je vous aider ?</label>
-            <textarea name="message" id="message" type="text" placeholder="votre message" pattern="[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$" required></textarea>
-            <span class="erreurMessage"></span>
+        <label class="baseLabel" for="Message"
+          >Comment puis-je vous aider ?</label
+        >
+        <textarea
+          name="message"
+          id="message"
+          type="text"
+          placeholder="votre message"
+          pattern="[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$"
+          required
+        ></textarea>
+        <span class="erreurMessage"></span>
 
-            <input id="isValide" type="submit" value="Envoyer">
-        </form>
+        <input id="isValide" type="submit" value="Envoyer" />
+      </form>
     </main>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
